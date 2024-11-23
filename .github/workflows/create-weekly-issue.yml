@@ -1,0 +1,23 @@
+name: Create Weekly Issue
+
+on:
+  schedule:
+    - cron: '0 13 * * 6'
+
+jobs:
+  create-issue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create GitHub Issue
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: "[1 Minute Share] ${{ github.event.created_at | format('YY.MM.dd') }}"
+          body: |
+            이번 주 진행 상황을 공유합니다.
+          labels: "1 Min Share"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
