@@ -18,6 +18,9 @@ jobs:
       - name: Update submodule
         run: |
           git submodule update --remote --force
+
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions@github.com"
           
           git add .
           if ! git diff-index --quiet HEAD; then
@@ -25,7 +28,7 @@ jobs:
           else
             echo "No changes to commit"
           fi
-          
+
       - name: Push changes
         run: |
           git push origin main
