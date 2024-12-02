@@ -1,6 +1,10 @@
 # No-Got-It
 
+## Code
+- git submodule을 활용하여 다루고 있는 코드를 공유합니다.
+
 ## [Issues](https://github.com/Team-UEMO/No-Got-It/issues)
+
 #### [TODO]
 - 우리 진짜 뭐할까에 대해 이야기합니다.
 
