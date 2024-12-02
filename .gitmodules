@@ -1,0 +1,3 @@
+[submodule "maybe-docker"]
+	path = maybe-docker
+	url = https://github.com/CMaybe/maybe-docker
