@@ -18,11 +18,19 @@ jobs:
         run: echo "date=$(date +'%y.%m.%d')" >> $GITHUB_ENV
 
       - name: Create GitHub Issue
-        uses: peter-evans/create-issue-from-file@v3
+        uses: actions/github-script@v6
         with:
-          title: "[1 Minute Share] ${{ env.date }}"
-          body: |
-            이번 주 진행 상황을 공유합니다.
-          labels: "1 Min Share"
+          script: |
+            const issueTitle = `[1 Minute Share] ${{ env.date }}`
+            const issueBody = "이번 주 진행 상황을 공유합니다."
+            const labels = ["1 Min Share"]
+            
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: issueTitle,
+              body: issueBody,
+              labels: labels
+            })
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
