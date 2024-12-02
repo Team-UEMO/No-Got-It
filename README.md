@@ -11,4 +11,4 @@
 - 취업 공고를 정리하는 등 취업에 도움이 되는 정보를 공유합니다.
 
 ## [Discussions](https://github.com/Team-UEMO/No-Got-It/discussions)
-- 
+- 자유롭게 생산적인 대화를 나누는 공간입니다.
