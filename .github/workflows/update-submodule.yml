@@ -12,14 +12,19 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        
+        with:
+          submodules: true
+          
       - name: Update submodule
         run: |
           git submodule update --remote --merge
+          
           git add .
-          git commit -m "Update submodule to latest version" || echo "No changes to commit"
-          git push
-
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Update submodule to latest version"
+          else
+            echo "No changes to commit"
+          fi
       - name: Push changes
         run: |
           git push origin main
