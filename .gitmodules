@@ -1,3 +1,6 @@
 [submodule "maybe-docker"]
 	path = maybe-docker
 	url = https://github.com/CMaybe/maybe-docker
+[submodule "MPC-Driving"]
+	path = MPC-Driving
+	url = https://github.com/CMaybe/MPC-Driving.git
