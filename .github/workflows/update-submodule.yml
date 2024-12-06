@@ -25,12 +25,19 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions@github.com"
           
-          git add .
-          if ! git diff-index --quiet HEAD; then
-            git commit -m "Update submodule to latest version"
-          else
-            echo "No changes to commit"
-          fi
+          git submodule foreach '
+            SUBMODULE_PATH=$(pwd)
+            COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+
+            # If there are changes in the submodule, commit them
+            if git diff-index --quiet HEAD; then
+              echo "Changes detected in $SUBMODULE_PATH: $COMMIT_MESSAGE"
+              git add .
+              git commit -m "$COMMIT_MESSAGE"
+            else
+              echo "No changes to commit for $SUBMODULE_PATH"
+            fi
+          '
 
       - name: Push changes
         run: |
