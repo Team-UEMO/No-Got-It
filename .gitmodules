@@ -4,3 +4,6 @@
 [submodule "MPC-Driving"]
 	path = MPC-Driving
 	url = https://github.com/CMaybe/MPC-Driving.git
+[submodule "slack-qa-bot"]
+	path = slack-qa-bot
+	url = https://github.com/uowol/QA-Bot.git
