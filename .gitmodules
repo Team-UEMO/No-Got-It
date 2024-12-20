@@ -7,3 +7,6 @@
 [submodule "slack-qa-bot"]
 	path = slack-qa-bot
 	url = https://github.com/uowol/QA-Bot.git
+[submodule "Aora-Engine"]
+	path = Aora-Engine
+	url = https://github.com/aor9/Aora.git
