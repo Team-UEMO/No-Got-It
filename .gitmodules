@@ -10,3 +10,6 @@
 [submodule "Aora"]
 	path = Aora
 	url = https://github.com/aor9/Aora.git
+[submodule "Project-Eve"]
+	path = Project-Eve
+	url = https://github.com/aor9/Project-Eve
