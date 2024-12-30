@@ -13,3 +13,6 @@
 [submodule "Project-Eve"]
 	path = Project-Eve
 	url = https://github.com/aor9/Project-Eve
+[submodule "kaggle-data-analysis"]
+	path = kaggle-data-analysis
+	url = https://github.com/uowol/Kaggle-Data-Analysis.git
