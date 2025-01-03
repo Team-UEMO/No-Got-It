@@ -13,3 +13,6 @@
 [submodule "Project-Eve"]
 	path = Project-Eve
 	url = https://github.com/aor9/Project-Eve
+[submodule "VulkanLab"]
+	path = VulkanLab
+	url = https://github.com/aor9/VulkanLab
