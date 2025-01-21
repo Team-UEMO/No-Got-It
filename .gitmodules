@@ -4,9 +4,9 @@
 [submodule "MPC-Driving"]
 	path = MPC-Driving
 	url = https://github.com/CMaybe/MPC-Driving.git
-[submodule "slack-qa-bot"]
-	path = slack-qa-bot
-	url = https://github.com/uowol/QA-Bot.git
+[submodule "ChatGPT-Wrapper"]
+	path = ChatGPT-Wrapper
+	url = https://github.com/uowol/ChatGPT-Wrapper.git
 [submodule "Aora"]
 	path = Aora
 	url = https://github.com/aor9/Aora.git
