@@ -19,3 +19,7 @@
 [submodule "VulkanLab"]
 	path = VulkanLab
 	url = https://github.com/aor9/VulkanLab
+[submodule "Convex-MPC"]
+	path = Convex-MPC
+	url = https://github.com/CMaybe/Convex-MPC.git
+	branch = develop
