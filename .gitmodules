@@ -26,3 +26,6 @@
 [submodule "MPCC"]
 	path = MPCC
 	url = https://github.com/CMaybe/MPCC.git
+[submodule "Optimal-Parking"]
+	path = Optimal-Parking
+	url = https://github.com/CMaybe/Optimal-Parking.git
