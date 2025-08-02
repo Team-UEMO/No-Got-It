@@ -7,9 +7,6 @@
 [submodule "ChatGPT-Wrapper"]
 	path = ChatGPT-Wrapper
 	url = https://github.com/uowol/ChatGPT-Wrapper.git
-[submodule "Aora"]
-	path = Aora
-	url = https://github.com/aor9/Aora.git
 [submodule "Project-Eve"]
 	path = Project-Eve
 	url = https://github.com/aor9/Project-Eve
